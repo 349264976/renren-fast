@@ -14,6 +14,8 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
+import lombok.Getter;
+import lombok.Setter;
 
 
 /**
@@ -23,6 +25,8 @@ import java.util.Date;
  */
 @Data
 @TableName("sys_log")
+@Getter
+@Setter
 public class SysLogEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@TableId
