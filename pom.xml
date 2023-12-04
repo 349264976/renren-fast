@@ -160,6 +160,17 @@
 			<groupId>commons-configuration</groupId>
 			<artifactId>commons-configuration</artifactId>
 			<version>${commons.configuration.version}</version>
+
+			<exclusions>
+				<exclusion>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.github.xiaoymin</groupId>
+					<artifactId>knife4j-spring-boot-starter</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
@@ -241,6 +252,19 @@
 			<groupId>com.hmuser</groupId>
 			<artifactId>gulimall-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+
+			<exclusions>
+				<exclusion>
+					<groupId>com.github.xiaoymin</groupId>
+					<artifactId>knife4j-spring-boot-starter</artifactId>
+				</exclusion>
+
+				<exclusion>
+					<groupId>io.springfox</groupId>
+					<artifactId>springfox-boot-starter</artifactId>
+				</exclusion>
+			</exclusions>
+
 		</dependency>
 	</dependencies>
 
